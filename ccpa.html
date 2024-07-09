@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no">
+    <title>365 Day Loan</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="sub-page">
+    <main>
+        <!-- header start -->
+        <header class="header">
+            <div class="main-header flex align-center space-between">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.svg" alt="365 Day Loan">
+                </a>
+                <div class="menu-btn">
+                    <span class="menu-line"></span>
+                </div>
+                <div class="header-right flex align-center">
+                    <div class="flex align-center" style="padding-bottom: 8px;">
+                        <a class="logo" href="index.html">
+                            <img src="images/logo.svg" alt="365 Day Loan">
+                        </a>
+                        <div class="menu-btn">
+                            <span class="menu-line"></span>
+                        </div>
+                    </div>
+                    <nav class="navbar">
+                        <ul class="menu-wrapper">
+                            <li><a href="how-it-works.html">How it works</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="terms-of-use.html">Terms of Use</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="ccpa.html">CCPA Request</a></li>
+                            <li><a href="eligibility-requirements.html">Eligibility Requirements</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="btn btn-primary">Start Now</a>
+                </div>
+            </div>
+        </header>
+        <!-- ccpa-sec -->
+    <section class=" ccpa-sec s_py">
+        <div class="container">
+            <div class="w-900 mx-auto">
+                <div class=" text-center ttl-mb-48 ">
+                    <span class=" small-text mb-8">CCPA Request</span>
+                    <h2 class="mb-16">Submit a CCPA Request</h2>
+                    <p>Please fill out the form below to submit your CCPA Request</p>
+                </div>
+                <div class=" form-box border-radius">
+				
+                    <form action="ccpa-action.php" method="POST" class="form">
+                        <h4 class="mb-32 ">CCPA Request</h4>
+                        <ul class="form-list d-flex">
+                            <li >
+                                <label>Are you making this request on behalf of yourself or someone else?</label>
+                                <select id="request_for" class="text-field text-field-2 col-6" name="request_for" required="required">
+                                    <option value="">Select</option>
+                                    <option value="Myself">Myself</option>
+                                    <option value="Someone Else">Someone Else</option>
+                                </select>
+                            </li>
+                            <li class="mb-32">
+                                <label>What type of request would you like to make? (Select at least one)</label>
+                                <div class="custom-checkbox w-100">
+                                    <input id="provide_access" type="checkbox" name="request_type[]" value="Please provide access to my personal information">
+                                    <label for="provide_access">Please provide access to my personal information</label>
+                                </div>
+                                <div class="custom-checkbox w-100">
+                                    <input id="request_delete" type="checkbox" name="request_type[]" value="Please delete my personal information">
+                                    <label for="request_delete">Please delete my personal information</label>
+                                </div>
+                                <div class="custom-checkbox w-100">
+                                    <input id="request_dontsell" type="checkbox" name="request_type[]" value="Please do not sell my personal information">
+                                    <label for="request_dontsell">Please do not sell my personal information</label>
+                                </div>
+                                <div class="custom-checkbox w-100">
+                                    <input id="request_question" type="checkbox" name="request_type[]" value="Ask a question related to my personal information and/or the CCPA">
+                                    <label for="request_question">Ask EmergencyLoanProgram.com a question related to my personal information and/or the CCPA</label>
+                                </div>
+                                <div class="hr"></div>
+                            </li>
+                            <li class="mb-16">
+                                <label>Please send the following information to help us process your request (please use the information previously supplied to EmergencyLoanProgram.com in order for us to identify you)</label>
+                            </li>
+                            <li class="col-6">
+                                <label>First Name</label>
+                                <input class="text-field text-field-2" id="first_name" type="text" name="first_name" required="" placeholder="Enter first name">
+                            </li><li class="col-6">
+                                <label>Last Name</label>
+                                <input class="text-field text-field-2" type="text" id="last_name" name="last_name" required="" placeholder="Enter last name">
+                            </li>
+                            <li class="col-6">
+                                <label>Phone Number</label>
+                                <input class="text-field text-field-2" id="phone_number" type="tel" name="phone" maxlength="12" required="" placeholder="Enter number">
+                            </li><li class="col-6">
+                                <label>Email</label>
+                                <input id="email" type="email" name="email" class="text-field text-field-2" required="" placeholder="Enter email">
+                            </li>
+                            <li class="col-6">
+                                <label>Street Address</label>
+                                <input id="street_address" type="text" name="address" class="text-field text-field-2" required="" placeholder="Enter address">
+                            </li><li class="col-6">
+                                <label>City</label>
+                                <input id="city" type="text" name="city" class="text-field text-field-2" required="" placeholder="Enter city">
+                            </li>
+                            <li class="col-6">
+                                <label>State</label>
+                                <input id="state" type="text" name="state" class="text-field text-field-2"  required="" placeholder="Enter state">
+                            </li><li class="col-6">
+                                <label>Zip</label>
+                                <input id="zip" type="text" name="zip_code" class="text-field text-field-2" required="" placeholder="Enter zip">
+                            </li>
+                            <li class="form-btn flex align-center space-between">
+                                <div style="margin-bottom: 8px; margin-top:8px;" class="g-recaptcha" data-sitekey="6Lek9ZEoAAAAAPEMCmP6Mk_AqW9rj8q8NkUto5Iz"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-1z0mhgrgz0o4" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lek9ZEoAAAAAPEMCmP6Mk_AqW9rj8q8NkUto5Iz&amp;co=aHR0cHM6Ly93d3cuZW1lcmdlbmN5bG9hbnByb2dyYW0uY29tOjQ0Mw..&amp;hl=en&amp;v=rz4DvU-cY2JYCwHSTck0_qm-&amp;size=normal&amp;cb=4dcdpgu5fv6b"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+                                <button class="btn btn-secondary">Submit Request</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- footer  -->
+        <footer>
+            <div class=" container footer-container ">
+                <div class="footer-menu flex space-between align-center">
+                    <a class="footer-logo" href="#"><img src="images/footer-logo.svg" alt=""></a>
+                    <ul class="footer-links">
+                        <li><a href="how-it-works.html">How it works</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="terms-of-use.html">Terms of Use</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="ccpa.html">CCPA Request</a></li>
+                        <li><a href="eligibility-requirements.html">Eligibility Requirements</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h4 class="content-title mb-16">Disclaimer</h4>
+                    <div class="content-block mb-24">
+                        <h5>Possible Implications</h5>
+                        <p>When borrowing, it is important to understand the implications that may happen if you do not adhere to the terms and agreement of your loan. We have listed here the possible implications and stress that you fully read and understand the terms of any loan offered to you before making a final decision to proceed.</p>
+                        <h5>Late or Non Payment</h5>
+                        <p>By accepting the terms and conditions for a personal loan, you essentially agree to repay the loan both: 1) with interest and 2) in the time frame specified in the loan agreement. In most cases, failure to repay the loan in full, or making a late payment, can result in additional charges. Modoloan.com has NO ability to predict or estimate what supplemental charges will be incurred in the event of late, partial, or non-payment.LoanToday.com also has NO control or knowledge of any loan agreements or details between you and your lender. Please carefully review the late, partial, and non-payment policies that your lender provides with your loan agreement.LoanToday.com works hard to partner with only the most trustworthy and reputable lenders who pursue the collection of past-due loan accounts in a fair and reasonable manner.</p>
+                        <h5>Credit Score Impact</h5>
+                        <p>Our lenders may perform credit checks to determine your credit worthiness, credit standing and/or credit capacity. By submitting your request you agree to allow our lenders to verify your personal information and check your credit. Please be aware that missing a payment or making a late payment can negatively impact your credit score.</p>
+                        <h5>Collection Practices</h5>
+                        <p>LoanToday.com is not a lender and, because of this, we have NO involvement in the debt collection process. As part of the lending agreement provided to you by the lender, they will disclose their debt collection practices. If you have any collection questions, please contact the lender for complete details.LoanToday.com only works with reputable lenders who use fair collection practices.</p> 
+                        <p class="">(*) – Three minutes is the average time taken to complete the online loan offer process, submit your details and receive a loan offer decision if approved.<br>
+                            (**) – Although some providers offer rates from 4.95% up to 35.99% APR rates that low are only available to certain customers. The repayment terms are for close end loan products, <br>
+                            and is not reflective of all loan products offered in our network.
+                        </p>
+                    </div>
+                    <div class="text-center copy-right">
+                        <p class="font-16">Copyright 2024 365dayloan.com All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <!-- script here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

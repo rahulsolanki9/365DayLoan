@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no">
+    <title>365 Day Loan</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="sub-page ">
+    <main>
+        <!-- header-start -->
+        <header class="header out-line">
+            <div class="main-header flex align-center space-between">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.svg" alt="365 Day Loan">
+                </a>
+                <div class="menu-btn">
+                    <span class="menu-line"></span>
+                </div>
+                <div class="header-right flex align-center">
+                    <div class="flex align-center" style="padding-bottom: 8px;">
+                        <a class="logo" href="index.html">
+                            <img src="images/logo.svg" alt="365 Day Loan">
+                        </a>
+                        <div class="menu-btn">
+                            <span class="menu-line"></span>
+                        </div>
+                    </div>
+                    <nav class="navbar">
+                        <ul class="menu-wrapper">
+                            <li><a href="how-it-works.html">How it works</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="terms-of-use.html">Terms of Use</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="ccpa.html">CCPA Request</a></li>
+                            <li><a href="eligibility-requirements.html">Eligibility Requirements</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class=" btn btn-primary">Start Now</a>
+                </div>
+            </div>
+        </header>
+        
+        <!-- step-wrapper -->
+        <section class="step-sec ">
+            <div class="progress">
+                <div class="progress-bar" style="width: 5%;"></div>
+            </div>
+            <div class="container">
+                <div class="step-block s_pb w-700 mx-auto text-center">
+                    <form method="POST" onSubmit="return validate(this)">
+                        <div class="step-swiper">
+                            <div class="swiper-wrapper ">
+                                <div class="swiper-slide" data-title="Slide1">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">How much would you like to borrow?</h2>
+                                    </div>
+                                    <div class="input-fild">
+                                        <input class="text-field " type="text" placeholder="$ 0" />
+                                    </div>
+                                    <p class="error" >Please enter $ 100 - $ 40,000</p>
+                                    <p class="security-msg font-16">By clicking "Next", you agree to our <a href="#"> Privacy Policy </a>, <a href="#"> Terms of Service</a>, <a href="#">E-Consent</a>, <a href="#">Arbitration Notice</a>, and the use of <a href="#"> Session Replay Technology</a>.  You also understand that if you are not connected with a Lender you  may be connected with other financial service providers that offer  products associated with your selected loan purpose.</p>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-secondary disable swiper-next ">Next</a>
+                                    </div>    
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide2">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">How do you want to spend the money?</h2>
+                                    </div>
+                                    <div class="input-fild">
+                                        <select class="text-field dropdown selNext">
+                                            <option value="" >Select</option>
+                                            <option value="Auto">Auto Purchase</option>
+                                            <option value="Credit Card">Credit Card Consolidation</option>
+                                            <option value="Debt Consolidation">Debt Consolidation</option>
+                                            <option value="Debt Settlement">Debt Settlement</option>
+                                            <option value="Education">Education</option>
+                                            <option value="Home Improvement">Home Improvement</option>
+                                            <option value="Medical">Medical</option>
+                                            <option value="Relocation">Relocation</option>
+                                            <option value="Renewable Energy">Renewable Energy</option>
+                                            <option value="Small Business">Small Business</option>
+                                            <option value="Travel">Travel</option>
+                                            <option value="Wedding">Wedding</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>    
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide3">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">What is your estimated credit score?</h2>
+                                    </div>
+                                    <div class="custom-options">
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="720" name="task_id" >
+                                            <label for="720">Excellent (720+)</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="660-719" name="task_id" >
+                                            <label for="660-719">Good (660-719)</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="600-659" name="task_id" >
+                                            <label for="600-659">Fair (600-659 )</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="Under-599" name="task_id" >
+                                            <label for="Under-599">Poor (Under 599)</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="no-credit" name="task_id" >
+                                            <label for="no-credit">No Credit Established</label>
+                                        </div>
+                                    </div>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>     
+                                </div>
+
+
+                                <div class="swiper-slide" data-title="Slide4">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">What is your employment status?</h2>
+                                    </div>
+                                    <div class="custom-options">
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="Employed" name="task_id_1" >
+                                            <label for="Employed">Employed</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="self_employed" name="task_id_1" >
+                                            <label for="self_employed">Self Employed</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="social_security" name="task_id_1" >
+                                            <label for="social_security">Social Security or Disability</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="Benefits" name="task_id_1" >
+                                            <label for="Benefits">Benefits</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="Unemployed" name="task_id_1" >
+                                            <label for="Unemployed">Unemployed</label>
+                                        </div>
+                                    </div>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>     
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide5">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">How often are you paid?</h2>
+                                    </div>
+                                    <div class="custom-options">
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="Monthly" name="task_id_2" >
+                                            <label for="Monthly">Monthly</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="twice_a_month" name="task_id_2" >
+                                            <label for="twice_a_month">Twice A Month</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="every_other_week" name="task_id_2" >
+                                            <label for="every_other_week">Every Other Week</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="Weekly" name="task_id_2" >
+                                            <label for="Weekly">Weekly</label>
+                                        </div>
+                                    </div>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>     
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide6">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl mb-16 ">What is your monthly income?</h2>
+                                        <p>Alimony,  child support, or separate maintenance payments need not be disclosed  unless you want it considered as a basis for repayment of the loan.</p>
+                                    </div>
+                                    <div class="input-fild">
+                                        <input class="text-field " type="text" placeholder="$ 0" "/>
+                                        <p>You may be asked to verify your income</p>
+                                    </div>
+                                    <p class="error" >Enter your monthly income</p>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>   
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide7">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">Do you have a checking account?</h2>
+                                    </div>
+                                    <div class="custom-options">
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="yes" name="task_id_3" >
+                                            <label for="yes">Yes</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="no" name="task_id_3" >
+                                            <label for="no">No</label>
+                                        </div>
+                                    </div>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide8">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">Do you have Direct Deposit?</h2>
+                                    </div>
+                                    <div class="custom-options">
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="Deposit_yes" name="task_id_4" >
+                                            <label for="Deposit_yes">Yes</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="deposit_no" name="task_id_4" >
+                                            <label for="deposit_no">No</label>
+                                        </div>
+                                    </div>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide9">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">What is your ZIP code?</h2>
+                                    </div>
+                                    <div class="input-fild">
+                                        <input class="text-field zip " type="text"  id="zip" name="zip" autocomplete="postal-code"  pattern="[0-9]*" maxlength="5" size="5" value="" placeholder="XXXXX">
+                                    </div>
+                                    <p class="error" >Please enter a valid 5 digit zipcode</p>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>   
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide10">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">What is your street address?</h2>
+                                    </div>
+                                    <div class="input-fild">
+                                        <input class="text-field " type="text" id="address" name="address" autocomplete="address-line1" placeholder="Address">
+                                        <p>Virginia Beach, Virginia 23456</p>
+                                    </div>
+                                    <p class="error" >Please enter your address</p>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>   
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide11">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">Do you own or rent your home?</h2>
+                                    </div>
+                                    <div class="custom-options">
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="own" name="task_id_5" >
+                                            <label for="own">Own</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="Rent" name="task_id_5" >
+                                            <label for="Rent">Rent</label>
+                                        </div>
+                                    </div>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide12">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">How long have you been at this address?</h2>
+                                    </div>
+                                    <div class="custom-options">
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="5_years_or_more" name="task_id_6" >
+                                            <label for="5_years_or_more">5 years or more</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="3-4-years" name="task_id_6" >
+                                            <label for="3-4-years">3-4 years</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="1-2-years" name="task_id_6" >
+                                            <label for="1-2-years">1-2 years</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="4-11 months" name="task_id_6" >
+                                            <label for="4-11 months">4-11 months</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="3-month-less" name="task_id_6" >
+                                            <label for="3-month-less">3 months or less</label>
+                                        </div>
+                                    </div>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide13">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">What is your email address?</h2>
+                                    </div>
+                                    <div class="input-fild">
+                                        <input class="text-field" type="email" id="email" name="email" autocomplete="email" placeholder="Email Address">
+                                    </div>
+                                    <p class="error" >Please enter a valid email</p>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>   
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide14">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">Do you have a vehicle registered in your name? </h2>
+                                    </div>
+                                    <div class="custom-options">
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="Yes-it-paid-off" name="task_id_7" >
+                                            <label for="Yes-it-paid-off">Yes - it's paid off</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="Yes-making-payments" name="task_id_7" >
+                                            <label for="Yes-making-payments">Yes - i'm making payments</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="not-myname" name="task_id_7" >
+                                            <label for="not-myname">No</label>
+                                        </div>
+                                    </div>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide15">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">What is your Military Affiliation?</h2>
+                                    </div>
+                                    <div class="custom-options">
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="not-a-servicemember" name="task_id_8" >
+                                            <label for="not-a-servicemember">Not a Servicemember</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="Yes-making-payments" name="task_id_8" >
+                                            <label for="Yes-making-payments">Active Duty Servicemember</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="Dependent-active" name="task_id_8" >
+                                            <label for="Dependent-active">Dependent of an Active Duty Servicemember</label>
+                                        </div>
+                                    </div>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide16">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl mb-16">How much unsecured debt do you have?</h2>
+                                        <p>Unsecured debt includes credit cards, personal loans, or medical bills.</p>
+                                    </div>
+                                    <div class="custom-options">
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="none" name="task_id_9" >
+                                            <label for="none">None</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="9999-less" name="task_id_9" >
+                                            <label for="9999-less">$9,999 or less</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="10000-19999" name="task_id_9" >
+                                            <label for="10000-19999">$10,000 - $19,999</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="20000-29999" name="task_id_9" >
+                                            <label for="20000-29999">$20,000 - $29,999</label>
+                                        </div>
+                                        <div class="custom-radio radio-next">
+                                            <input type="radio" id="30000-more" name="task_id_9" >
+                                            <label for="30000-more">$30,000 or more</label>
+                                        </div>
+                                    </div>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable c">Next</a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide17">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">What is your name?</h2>
+                                    </div>
+                                    <div class="input-fild">
+                                        <input class="text-field " type="text" id="fname" name="first_name" placeholder="First Name" autocomplete="on">
+                                        <input class="text-field " type="text" id="lname" name="last_name" placeholder="Last Name" autocomplete="on">
+                                    </div>
+                                    <p class="error" >Please enter a name</p>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>   
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide18">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">What is your date of birth?</h2>
+                                    </div>
+                                    <div class="input-fild">
+                                        <input type="date" inputmode="numeric" placeholder="Dear of birth" class="text-field " id="dob" name="dob" autocomplete="bday-year"  pattern="[0-9]*" value="" required>
+                                    </div>
+                                    <p class="error" >Please enter a valid date of birth</p>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>   
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide19">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">What is your phone number?</h2>
+                                    </div>
+                                    <div class="input-fild">
+                                        <input class="text-field" placeholder="XXXXX XXXXX" type="tel" id="phone" name="phone_number" inputmode="numeric" autocomplete="on" maxlength="10" pattern="[0-9]*">
+                                    </div>
+                                    <p class="error" >Please enter a 10 digit phone number</p>
+                                    <div class="security-msg policy-msg text-left"> 
+                                        <div class="custom-checkbox ">
+                                            <input id="request_dontsell" type="checkbox" name="request_type[]" value="Please do not sell my personal information">
+                                            <label for="request_dontsell"></label>
+                                        </div>
+                                        By checking this box and clicking "NEXT" I hereby provide my express  consent to recurring communication at the telephone number by Search  ROI, LLC, Cash By Phone, LLC, and up to  six <a href="#"> Marketplace Partners </a>  (including parties calling on their behalf) in connection with my loan  request, for other marketing purposes, and related to credit or credit  repair offers, including contact through automatic dialing systems,  artificial or pre-recorded voice messaging, or text message. I  understand that my consent applies to these text messages and  telemarketing calls even if I have subscribed to a federal, state, or  company "Do Not Call" registry. Message and data rates may apply. To  opt-out, please reply STOP to the received text message. My check of the  preceding box shall be my electronic signature to this consent. I  understand that consent is not a condition to utilize our services. <a href="#"> Terms of Service </a> / <a href="#"> Privacy Policy </a> apply.
+                                    </div>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                        <a href="#" class="btn btn-secondary disable swiper-next">Next</a>
+                                    </div>   
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide20">
+                                    <div class="title mb-24">
+                                        <h2 class="step-ttl mb-16">What is your Social Security Number?</h2>
+                                        <div class="lock-msg ">
+                                            <p class="font-16">We do a soft pull which does not affect your credit score. We use 256-bit SSL technology to encrypt your data.</p>
+                                        </div>
+                                    </div>
+                                    <div class="input-fild">
+                                        <input class="text-field" placeholder="XXX-XX-XXXX" type="tel" id="phone" name="phone_number" inputmode="numeric" autocomplete="on" maxlength="10" pattern="[0-9]*">
+                                    </div>
+                                    <p class="error" >Please enter a valid social security number</p>
+                                    <p class="security-msg policy-msg text-center" > 
+                                        By  providing your Social Security Number and clicking "View Offers" below,  you are providing written instructions under the Fair Credit Reporting  Act for Search ROI, LLC, and its <a href="#"> Marketplace Partners </a>  with whom Search ROI, LLC connects you to obtain your consumer credit  report from contracted Credit Bureau(s) associated with your  pre-qualification for credit inquiry.
+                                    </p>
+                                    <div class="btns-group ">
+                                        <a href="#" class="btn btn-secondary disable swiper-next mb-24">Next</a>
+                                        <div style="text-align: justify;">
+                                            <p class="consent step-additional-text mb-24">By providing my Social Security Number and clicking on "View Offers" above, I consent, acknowledge, and agree to the following:</p>
+                                            <ul class="consent mb-24">
+                                                <li><a href="#" target="_blank" title="Terms of Service">Terms of Service</a>, <a href="#" target="_blank" title="Privacy Policy">Privacy Policy</a>, <a target="_blank" href="#" title="Credit Authorization Agreement">Credit Authorization Agreement</a>, <a target="_blank" href="#" title="E-Consent">E-Consent</a>, <a target="_blank" href="#" title="Arbitration Notice">Arbitration Notice</a>, <a href="#" target="_blank" title="Advertiser Disclosure">Advertiser Disclosure</a>, <a href="#" target="_blank" title="Personal Loan Notice">Personal Loan Notice</a>, and the use of <a target="_blank" href="#" title="Session Replay Technology">Session Replay Technology</a>.</li>
+                                                <li>By continuing with the prequalification process, I understand and agree that I am authorizing Search ROI, LLC to obtain a consumer report from TransUnion. Search ROI, LLC may use the report to authenticate your identity and connect you with products or services. The inquiry is a soft pull of your consumer report and does not affect your credit score.</li>
+                                                <li>I understand my information will be presented to a network of lenders and/or lending partners, and those lenders and/or lending partners will review and verify my information in order to determine if I may qualify for a loan. I acknowledge that lenders, lending partners, and other financial service providers may share my personal information, including approval status and funded status.</li>
+                                                <li>I understand that if I am not connected with a personal loan lender and/or lending partner at the requested amount, my information may be shown to additional lenders and/or lending partners who provide lower loan amounts and higher rates. I also understand that if I am not connected with a Lender I may be connected with other financial service providers that offer products associated with my selected loan purpose.</li>
+                                                <li>I certify that all information herein is true and complete.</li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="btn btn-primary swiper-prev">Back</a>
+                                    </div>   
+                                    
+                                </div>
+
+                                <div class="swiper-slide" data-title="Slide21">
+                                    <div class=" ttl-mb-48">
+                                        <h2 class="step-ttl ">Your form is being processed</h2>
+                                    </div>
+                                    <div class="progress-line">
+                                        <span class="bar">
+                                            <span class="progress-item "></span>
+                                        </span>
+                                    </div>
+                                    <div class="process-content ">
+                                        <h4 class="mb-16">This may take a few minutes.</h4>
+                                        <p class="text-sm mb-8 font-16">Please do not press the back button or refresh this page as it could delay or withdraw your form.</p>
+                                        <p class="text-xsm">We appreciate the opportunity to serve vou todav and mav send vou an email in the event vou would like to utilize our marketplace again in the future.</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="lock-msg">
+                            <p>We use 256 bit SSL technology to encrypt your data.</p>
+                            <p><a href="#">Advertiser Disclosure</a></p>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer  -->
+        <footer>
+            <div class=" container footer-container ">
+                <div class="footer-menu flex space-between align-center">
+                    <a class="footer-logo" href="#"><img src="images/footer-logo.svg" alt=""></a>
+                    <ul class="footer-links">
+                        <li><a href="how-it-works.html">How it works</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="terms-of-use.html">Terms of Use</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="ccpa.html">CCPA Request</a></li>
+                        <li><a href="eligibility-requirements.html">Eligibility Requirements</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h4 class="content-title mb-16">Disclaimer</h4>
+                    <div class="content-block mb-24">
+                        <h5>Possible Implications</h5>
+                        <p>When borrowing, it is important to understand the implications that may happen if you do not adhere to the terms and agreement of your loan. We have listed here the possible implications and stress that you fully read and understand the terms of any loan offered to you before making a final decision to proceed.</p>
+                        <h5>Late or Non Payment</h5>
+                        <p>By accepting the terms and conditions for a personal loan, you essentially agree to repay the loan both: 1) with interest and 2) in the time frame specified in the loan agreement. In most cases, failure to repay the loan in full, or making a late payment, can result in additional charges. Modoloan.com has NO ability to predict or estimate what supplemental charges will be incurred in the event of late, partial, or non-payment.LoanToday.com also has NO control or knowledge of any loan agreements or details between you and your lender. Please carefully review the late, partial, and non-payment policies that your lender provides with your loan agreement.LoanToday.com works hard to partner with only the most trustworthy and reputable lenders who pursue the collection of past-due loan accounts in a fair and reasonable manner.</p>
+                        <h5>Credit Score Impact</h5>
+                        <p>Our lenders may perform credit checks to determine your credit worthiness, credit standing and/or credit capacity. By submitting your request you agree to allow our lenders to verify your personal information and check your credit. Please be aware that missing a payment or making a late payment can negatively impact your credit score.</p>
+                        <h5>Collection Practices</h5>
+                        <p>LoanToday.com is not a lender and, because of this, we have NO involvement in the debt collection process. As part of the lending agreement provided to you by the lender, they will disclose their debt collection practices. If you have any collection questions, please contact the lender for complete details.LoanToday.com only works with reputable lenders who use fair collection practices.</p> 
+                        <p class="">(*) – Three minutes is the average time taken to complete the online loan offer process, submit your details and receive a loan offer decision if approved.<br>
+                            (**) – Although some providers offer rates from 4.95% up to 35.99% APR rates that low are only available to certain customers. The repayment terms are for close end loan products, <br>
+                            and is not reflective of all loan products offered in our network.
+                        </p>
+                    </div>
+                    <div class="text-center copy-right">
+                        <p class="font-16">Copyright 2024 365dayloan.com All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <!-- script here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
